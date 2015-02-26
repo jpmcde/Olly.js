@@ -172,7 +172,7 @@
 
         imgur: '<img src="{{embedURL}}" />',
         
-        jsfiddle: '<iframe style="width: 100%; height: 300px" src="{{embedURL}}"></iframe>',
+        xtube: '<iframe src='http://www.xtube.com/embedded/user/play.php?v=AD2zv-G898-' frameborder=0 width='640' height='480' scrolling=no name='xt_embed_video'></iframe>',
         
         twitter_tweet: {
             markup: '<blockquote class="twitter-tweet" lang="en"><p> <a href="{{embedURL}}"></a></blockquote>',
@@ -253,6 +253,16 @@
             var structure = {
                 data: {
                     embedURL: '//player.vimeo.com/video/' + URL.pathchunks[0]
+                }
+            };
+            return structure;
+        },
+        
+        // xtube.com Video Structure
+        xtube: function (URL) {
+            var structure = {
+                data: {
+                    embedURL: URL.pathchunks[0]
                 }
             };
             return structure;
