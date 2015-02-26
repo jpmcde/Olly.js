@@ -172,7 +172,7 @@
 
         imgur: '<img src="{{embedURL}}" />',
         
-        xtube: '<iframe src='http://www.xtube.com/embedded/user/play.php?v=AD2zv-G898-' frameborder=0 width='640' height='480' scrolling=no name='xt_embed_video'></iframe>',
+        xtube: '<iframe src='{{embedURL}}' frameborder=0 width='640' height='480' scrolling=no name='xt_embed_video'></iframe>',
         
         twitter_tweet: {
             markup: '<blockquote class="twitter-tweet" lang="en"><p> <a href="{{embedURL}}"></a></blockquote>',
